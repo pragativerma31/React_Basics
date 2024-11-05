@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Header */
+.Heading-box h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+
+.Heading-box .underline {
+    width: 100px;
+    height: 4px;
+    background-color: #6a38f5;
+    margin: 10px auto 20px;
+}
+
+/* Testimonial Card */
+.Card {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Card .profile-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #6a38f5;
+}
+
+.name h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job {
+    font-size: 14px;
+    color: #8c7de5;
+    margin-bottom: 15px;
+}
+
+.description p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.description span {
+    color: #6a38f5;
+    font-size: 20px;
+}
+
+/* Navigation Buttons */
+.Left-right-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.Prev-button button, .Next-button button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #6a38f5;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.Prev-button button:hover, .Next-button button:hover {
+    color: #533ab5;
+}
+
+/* Surprise Button */
+.suprise-button button {
+    background-color: #6a38f5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suprise-button button:hover {
+    background-color: #533ab5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .Card {
+        width: 100%;
+    }
+}
+
+
+

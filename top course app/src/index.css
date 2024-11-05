@@ -1,0 +1,146 @@
+/* Global styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Heading style */
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  /* Container for options and cards */
+  .container {
+    display: block;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Options style */
+  .Options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .Options button {
+    background-color: #333333;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Options button:hover {
+    background-color: #444444;
+  }
+  
+  /* Cards container with grid layout */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Individual card styles */
+  .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    padding: 15px;
+    text-align: center;
+    position: relative; /* Relative positioning for Like button */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .course-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  h5 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  
+  /* Like button box */
+  .Like-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .Like-box svg {
+    color: white;
+  }
+
+
+  /* Dark theme toast */
+  /* The default styles of react-toastify might be overriding your custom styles due to CSS specificity. You can increase specificity by using more specific selectors or !important. */
+.Toastify__toast {
+  background-color: #333 !important; /* Dark background */
+  color: #fff !important;            /* Light text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+}
+
+.Toastify__toast--success {
+  background-color: #227325 !important; /* Green for success toasts */
+}
+
+.Toastify__toast--error {
+  background-color: #a5190f !important; /* Red for error toasts */
+}
+
+.Toastify__close-button {
+  color: #fff !important; /* White close button for dark theme */
+}
+
+.Toastify__progress-bar {
+  background: #ffffff !important; /* Custom color for the progress bar */
+}
+
+/* LoadingSpinner.css */
+.spinner-container {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Allow it to fill its parent height */
+}
+
+.spinner {
+  border: 8px solid #444; /* Dark gray border */
+  border-top: 8px solid #e5155e; /* Bright color for the spinner */
+  border-radius: 50%;
+  width: 50px; /* Size of the spinner */
+  height: 50px;
+  animation: spin 1s linear infinite; /* Animation for spinning */
+}
+
+/* Keyframes for the spinning effect */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+  
